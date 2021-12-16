@@ -8,7 +8,7 @@ namespace Final1
         {
             Console.Write("Input number : ");
             int n = int.Parse(Console.ReadLine());
-            int[] number = new int[n];
+            char[] number = new char[n];
 
             Console.WriteLine("Input char : ");
             for (int i = 0; i < n; i++)
@@ -24,7 +24,7 @@ namespace Final1
                 {
                     min = j;
                 }
-                
+                Swap(ref number, i, min);
             }
             Console.Write("Summation : ");
             for (int i = 0; i < n; i++)
@@ -33,6 +33,11 @@ namespace Final1
             }
         }
 
-        
+        static void Swap(ref char[] number, int index1, int index2)
+        {
+            char tmp = number[index1];
+            number[index1] = number[index2];
+            number[index2] = tmp;
+        }
     }
 }
