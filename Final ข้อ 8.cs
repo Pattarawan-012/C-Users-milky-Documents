@@ -24,7 +24,7 @@ namespace Final1
                 {
                     min = j;
                 }
-                Swap(ref number, i, min);
+                
             }
             Console.Write("Summation : ");
             for (int i = 0; i < n; i++)
@@ -33,11 +33,6 @@ namespace Final1
             }
         }
 
-        static void Swap(ref int[] number, int index1, int index2)
-        {
-            int tmp = number[index1];
-            number[index1] = number[index2];
-            number[index2] = tmp;
-        }
+        
     }
 }
